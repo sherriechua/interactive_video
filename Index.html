@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Video Story</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="video-container">
+        <video id="interactive-video" controls>
+            <source id="video-source" src="https://drive.google.com/uc?export=download&id=file/d/1Ym3T6IomY5hcwieN3kZxj4vXgOL2GkBZ/view?usp=drive_link" type="video/mp4">
+            https://drive.google.com/
+            Your browser does not support the video tag.
+            <source id="option1" src="shoes on_final.mp4" type="video/mp4">
+            <source id="option2" src="Shoes off_final.mp4" type="video/mp4">
+        </video>
+        <div id="choices" class="hidden">
+            <button onclick="chooseBranch('option1')">walk in</button>
+            <button onclick="chooseBranch('option2')">take off shoes</button>
+            <!-- Buttons will be added dynamically here -->            
+        </div>
+        <video id="interactive-video" controls>
+            <source id="video-source" src="shoes on_final.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            <source id="option3" src="fidget.mp4" type="video/mp4">
+            <source id="option4" src="check phone.mp4" type="video/mp4">
+        </video>
+        <div id="choices" class="hidden">         
+            <button onclick="chooseBranch('option3')">fidget</button>
+            <button onclick="chooseBranch('option4')">check phone</button>
+        </div>
+        <video id="interactive-video" controls>
+            <source id="video-source" src="Shoes off_final.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            <source id="option5" src="fidget.mp4" type="video/mp4">
+            <source id="option6" src="check phone.mp4" type="video/mp4">
+        </video>
+        <div id="choices" class="hidden">         
+            <button onclick="chooseBranch('option3')">fidget</button>
+            <button onclick="chooseBranch('option4')">check phone</button>
+        </div>
+        <video id="interactive-video" controls>
+            <source id="video-source" src="fidget.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            <source id="option5" src="thanks.mp4" type="video/mp4">
+            <source id="option6" src="drink.mp4" type="video/mp4">
+        </video>
+        <div id="choices" class="hidden">         
+            <button onclick="chooseBranch('option5')">thanks</button>
+            <button onclick="chooseBranch('option6')">drink</button>
+        </div>
+        <video id="interactive-video" controls>
+            <source id="video-source" src="thanks.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            <source id="option7" src="fight for bill.mp4" type="video/mp4">
+        </video>
+        <div id="choices" class="hidden">         
+            <button onclick="chooseBranch('option7')">after dinner</button>
+        </div>
+        <video id="interactive-video" controls>
+            <source id="video-source" src="drink.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            <source id="option7" src="fight for bill.mp4" type="video/mp4">
+        </video>
+        <div id="choices" class="hidden">         
+            <button onclick="chooseBranch('option7')">after dinner</button>
+        </div>
+        <video id="interactive-video" controls>
+            <source id="video-source" src="fight for bill.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            <source id="To Be Continued" src="tbc.mp4" type="video/mp4">
+        </video>
+        <div id="choices" class="hidden">         
+            <button onclick="chooseBranch('To Be Continued')">after dinner</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
